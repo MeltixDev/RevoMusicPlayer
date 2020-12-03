@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Revo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white_dark</item>
+        <item name="colorPrimaryVariant">@color/white_darker</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_light</item>
+        <item name="colorSecondaryVariant">@color/purple_revo</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/grey_darker</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/grey_darker</item>
+        <item name="android:navigationBarColor">@color/grey_dark</item>
+    </style>
+
+    <style name="slashScreenTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <item name="android:statusBarColor" tools:targetApi="1">@color/grey_darker</item>
+        <item name="android:navigationBarColor">@color/grey_darker</item>
+    </style>
+
+    <style name="popupMenuThemeDark">
+        <item name="android:backgroundTint">@color/grey_darker</item>
+        <item name="android:textColor">@color/white_material</item>
+    </style>
+
+</resources>

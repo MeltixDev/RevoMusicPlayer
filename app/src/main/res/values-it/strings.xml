@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Revo Music Player</string>
+    <string name="tracks">Brani</string>
+    <string name="albums">Album</string>
+    <string name="playlists">Playlist</string>
+    <string name="artist">Artista</string>
+    <string name="year">Anno</string>
+    <string name="date">Data</string>
+    <string name="sort">Ordina per…</string>
+    <string name="grid">Griglia e layout</string>
+    <string name="increasing">Crescente</string>
+    <string name="decreasing">Decrescente</string>
+    <string name="search">Cerca</string>
+    <string name="folders">Cartelle</string>
+    <string name="settings">Impostazioni</string>
+    <string name="about">Informazioni</string>
+    <string name="currentScreenSettings">Impostazioni</string>
+    <string name="images">Immagini</string>
+    <string name="playing">In riproduzione</string>
+    <string name="look">Aspetto</string>
+    <string name="library">Libreria</string>
+    <string name="lookdescription">Cambia tema e colori dell\'app</string>
+    <string name="playingdescription">Personalizza il riproduttore musicale</string>
+    <string name="imagesdscription">Copertina album e metadata</string>
+    <string name="audiodescription">Modifica impostazioni audio e modifica equalizzatore</string>
+    <string name="aboutdescription">Versione dell\'app e contatti</string>
+    <string name="other">Altro</string>
+    <string name="otherdescription">Altre funzionalità</string>
+    <string name="theme">TEMA</string>
+    <string name="pureblack">Usa nero puro</string>
+    <string name="generaltheme">Tema generale</string>
+    <string name="openspotify">Apri Spotify</string>
+    <string name="notinstalled">Applicazione non installata</string>
+    <string name="newplaylist">Nuova playlist</string>
+    <string name="controls">CONTROLLI</string>
+    <string name="welcomeex">Benvenuto!</string>
+    <string name="grantpermission">Concedi permessi</string>
+    <string name="introtext">Revo è un lettore musicale che ti permette di ascoltare ai tuoi brani  salvati in memoria e di ascoltare ai brani salvati nella tua playlist dei preferiti di Spotify.</string>
+    <string name="permissiontext">Abbiamo bisogno dei permessi di archiviazione per concedere a Revo la lettura dei tuoi brani e la scrittura della loro metadata. \n\nPremi il bottone per concedere i permessi di archiviazione.</string>
+    <string name="permissiongranted">Permessi concessi! Dievrtiti!</string>
+    <string name="permissiondenied">Permesso negato. \nDevi concedere i permessi di archiviazione prima di usare l\'app</string>
+    <string name="permissionback">Devi concedere i permessi di archiviazione prima di usare l\'app</string>
+    <string name="mostplayed">I pi\ù riprodotti</string>
+    <string name="lastplayed">Ultimi ascoltati</string>
+    <string name="shuffle">Casuale</string>
+</resources>

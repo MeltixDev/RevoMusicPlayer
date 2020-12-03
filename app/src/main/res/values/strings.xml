@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Revo Music Player</string>
+    <string name="short_name" translatable="false">Revo</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="tracks">Tracks</string>
+    <string name="albums">Albums</string>
+    <string name="playlists">Playlists</string>
+    <string name="artist">Artist</string>
+    <string name="year">Year</string>
+    <string name="date">Date</string>
+    <string name="search">Search</string>
+    <string name="folders">Folders</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="spotify" translatable="false">Spotify</string>
+    <string name="sort">Sort by…</string>
+    <string name="grid">Grid and layout</string>
+    <string name="increasing">Increasing</string>
+    <string name="decreasing">Decreasing</string>
+    <string name="currentScreenSettings">Settings</string>
+    <string name="look">Look &amp; Feel</string>
+    <string name="lookdescription">Change theme and app colors</string>
+    <string name="playing">Playing</string>
+    <string name="playingdescription">Customize the player screen</string>
+    <string name="images">Images</string>
+    <string name="imagesdscription">Album art and metadata</string>
+    <string name="audio" translatable="false">Audio</string>
+    <string name="audiodescription">Change audio settings and manage equalizer</string>
+    <string name="library">Library</string>
+    <string name="other">Other</string>
+    <string name="otherdescription">Other features</string>
+    <string name="aboutdescription">App version and contacts</string>
+    <string name="vertical3dots" translatable="false">&#8942;</string>
+    <string name="theme">THEME</string>
+    <string name="generaltheme">General theme</string>
+    <string name="pureblack">Use pure black</string>
+    <string name="openspotify">Open Spotify</string>
+    <string name="notinstalled">App not installed</string>
+    <string name="newplaylist">New playlist</string>
+    <string name="controls">CONTROLS</string>
+    <string name="welcomeex">Welcome!</string>
+    <string name="introtext">Revo is a music player that lets you both listen your music saved in your device storage and listen to tracks saved in your Spotify favourite\'s playlist.</string>
+    <string name="permissiontext">We need storage permission to let Revo read your tracks and edit their metadata. \n\nPress the button to grant storage permissions.</string>
+    <string name="grantpermission">Grant permissions</string>
+    <string name="permissiongranted">Permission granted! Have fun!</string>
+    <string name="permissiondenied">Permission denied. \nYou must grant storage permission before using the app</string>
+    <string name="permissionback">You must grant storage permission before using the app</string>
+    <string name="mostplayed">Most played</string>
+    <string name="lastplayed">Last played</string>
+    <string name="shuffle">Shuffle</string>
+</resources>

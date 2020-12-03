@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/fsvOrder"
+            android:icon="@drawable/ic_outline_sort_24"
+            android:title="@string/sort"
+            app:showAsAction="never">
+                <menu>
+                        <group android:id="@+id/sortMenu" android:checkableBehavior="single">
+                                <item
+                                    android:id="@+id/sortIncrease"
+                                    android:title="@string/increasing"/>
+
+                                <item
+                                    android:id="@+id/sortDecrease"
+                                    android:title="@string/decreasing"/>
+
+                                <item
+                                    android:id="@+id/sortMArtist"
+                                    android:title="@string/artist"/>
+
+                                <item
+                                    android:id="@+id/sortAlbum"
+                                    android:title="@string/albums"/>
+
+                                <item
+                                    android:id="@+id/sortYear"
+                                    android:title="@string/year"/>
+
+                                <item
+                                    android:id="@+id/sortDate"
+                                    android:title="@string/date"/>
+
+                        </group>
+                </menu>
+        </item>
+
+        <item
+            android:id="@+id/fsvOpenSpotify"
+            android:icon="@drawable/ic_outline_launch_24"
+            android:title="@string/openspotify"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/fsvSettings"
+            android:icon="@drawable/ic_outline_settings_24"
+            android:title="@string/settings"
+            app:showAsAction="never" />
+</menu>
