@@ -40,14 +40,11 @@
     <string name="notinstalled">App not installed</string>
     <string name="newplaylist">New playlist</string>
     <string name="controls">CONTROLS</string>
-    <string name="welcomeex">Welcome!</string>
-    <string name="introtext">Revo is a music player that lets you both listen your music saved in your device storage and listen to tracks saved in your Spotify favourite\'s playlist.</string>
-    <string name="permissiontext">We need storage permission to let Revo read your tracks and edit their metadata. \n\nPress the button to grant storage permissions.</string>
+    <string name="welcome">Welcome!</string>
     <string name="grantpermission">Grant permissions</string>
-    <string name="permissiongranted">Permission granted! Have fun!</string>
-    <string name="permissiondenied">Permission denied. \nYou must grant storage permission before using the app</string>
-    <string name="permissionback">You must grant storage permission before using the app</string>
     <string name="mostplayed">Most played</string>
     <string name="lastplayed">Last played</string>
     <string name="shuffle">Shuffle</string>
+    <string name="errorohno" translatable="false">Oh no!</string>
+    <string name="nopermission">I can\'t access to your phones\' storage!\nGrant storage permissions to see your tunes!</string>
 </resources>
