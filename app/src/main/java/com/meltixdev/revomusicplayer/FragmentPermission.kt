@@ -1,18 +1,19 @@
 package com.meltixdev.revomusicplayer
 
-import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.provider.Settings
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.meltixdev.revomusicplayer.databinding.FragmentPermissionBinding
+import com.meltixdev.revomusicplayer.settings.ActivitySettings
+import java.util.jar.Manifest
 
-class FragmentPermission : Fragment() {
+class FragmentPermission : Fragment(R.layout.fragment_permission) {
 
     private lateinit var binding: FragmentPermissionBinding
 
@@ -24,12 +25,6 @@ class FragmentPermission : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.fragment_permission, container, false)
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -37,34 +32,15 @@ class FragmentPermission : Fragment() {
 
         binding.topToolbar.inflateMenu(R.menu.menu_toolbar_home)
 
+        binding.topToolbar.setOnMenuItemClickListener {
+            when(it.itemId) {
+                R.id.fsvSettings -> this.startActivity(Intent(activity, ActivitySettings::class.java))
+            }
+            true
+        }
+
         binding.btnPermission.setOnClickListener {
-            /*if (ContextCompat.checkSelfPermission(
-                    this,
-                    android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
-            ) {*/
-
-            requestPermissions(arrayOf(
-                    android.Manifest.permission.READ_EXTERNAL_STORAGE,
-                    android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                    PERMISSION_REQUEST_CODE
-            )
-
-            /*ActivityCompat.requestPermissions(this, arrayOf(
-                    android.Manifest.permission.READ_EXTERNAL_STORAGE,
-                    android.Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                    PERMISSION_REQUEST_CODE)*/
+            startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:com.meltixdev.revomusicplayer")))
         }
     }
-
-    /*override fun onRequestPermissionsResult(
-            requestCode: Int,
-            permissions: Array<out String>,
-            grantResults: IntArray
-    ) {
-        if (requestCode == PERMISSION_REQUEST_CODE) {
-            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            } else {
-            }
-        }
-    }*/
 }

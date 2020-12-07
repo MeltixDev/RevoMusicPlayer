@@ -2,6 +2,7 @@ package com.meltixdev.revomusicplayer.settings
 
 import android.os.Binder
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.meltixdev.revomusicplayer.R
 import com.meltixdev.revomusicplayer.databinding.ActivitySettingsBinding
@@ -13,8 +14,10 @@ class ActivitySettings : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binder = ActivitySettingsBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_settings)
+        setContentView(binder.root)
 
-
+        binder.topToolbarBack.setNavigationOnClickListener {
+            finish()
+        }
     }
 }

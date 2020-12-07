@@ -25,6 +25,7 @@
             android:layout_height="56dp"
             android:background="@color/grey_dark"
             android:elevation="0dp"
+            android:visibility="invisible"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"
             app:labelVisibilityMode="selected"

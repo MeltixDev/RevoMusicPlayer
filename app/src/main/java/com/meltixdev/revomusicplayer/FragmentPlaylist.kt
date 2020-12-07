@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.meltixdev.revomusicplayer.databinding.FragmentHomeBinding
 import com.meltixdev.revomusicplayer.databinding.FragmentPlaylistBinding
-import com.meltixdev.revomusicplayer.databinding.FragmentTrackBinding
 
 class FragmentPlaylist : Fragment(R.layout.fragment_playlist) {
 
@@ -28,6 +26,6 @@ class FragmentPlaylist : Fragment(R.layout.fragment_playlist) {
 
         binding = FragmentPlaylistBinding.bind(view)
 
-        binding.topToolbar.inflateMenu(R.menu.menu_toolbar)
+        binding.topToolbar.inflateMenu(R.menu.menu_toolbar_playlist)
     }
 }

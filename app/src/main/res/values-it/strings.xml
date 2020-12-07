@@ -40,4 +40,5 @@
     <string name="shuffle">Casuale</string>
     <string name="welcome">Benvenuto!</string>
     <string name="nopermission">Non posso accedere alla memoria del tuo telefono!\nConcedi i permessi per vedere le tue melodie!</string>
+    <string name="opensyssettings">Apri impostazioni di sistema</string>
 </resources>
