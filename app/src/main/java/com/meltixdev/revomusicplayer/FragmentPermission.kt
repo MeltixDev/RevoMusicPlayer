@@ -1,17 +1,13 @@
 package com.meltixdev.revomusicplayer
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
 import android.view.View
-import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.meltixdev.revomusicplayer.databinding.FragmentPermissionBinding
 import com.meltixdev.revomusicplayer.settings.ActivitySettings
-import java.util.jar.Manifest
 
 class FragmentPermission : Fragment(R.layout.fragment_permission) {
 
