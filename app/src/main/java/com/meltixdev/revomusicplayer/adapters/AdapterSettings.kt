@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.meltixdev.revomusicplayer.R
 import com.meltixdev.revomusicplayer.databinding.ItemSettingsBinding
-import com.meltixdev.revomusicplayer.dataclasses.DataItemSettings
+import com.meltixdev.revomusicplayer.dataclasses.DataItemsSettings
+import com.meltixdev.revomusicplayer.settings.ActivitySettings
 
 class AdapterSettings(
         var settingsList: List<DataItemSettings>,
@@ -14,7 +14,7 @@ class AdapterSettings(
         private val binding: ItemSettingsBinding
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    inner class SettingsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    inner class SettingsViewHolder(private val binding: ItemSettingsBinding): RecyclerView.ViewHolder(binding.root), View.OnClickListener {
         init {
             itemView.setOnClickListener(this)
         }
@@ -24,6 +24,12 @@ class AdapterSettings(
             if (position != RecyclerView.NO_POSITION) {
                 listener.OnItemClick(position)
             }
+        }
+
+        fun bind(item: DataItemsSettings) {
+            binding.rvTitle.text = settingsList[position].stringTitle
+            binding.rvDescription.text = settingsList[position].stringDescription
+            binding.rvIcon.setImageResource(settingsList[position].itemIcon)
         }
     }
 
@@ -37,13 +43,7 @@ class AdapterSettings(
     }
 
     override fun onBindViewHolder(holder: SettingsViewHolder, position: Int) {
-        binding = ItemSettingsBinding.inflate(R.layout.item_settings)
-
-        holder.itemView.apply {
-            binding.rvTitle.text = settingsList[position].stringTitle
-            binding.rvDescription.text = settingsList[position].stringDescription
-            binding.rvIcon.setImageResource(settingsList[position].itemIcon)
-        }
+        holder.bind(settingsList[position])
     }
 
     interface OnItemClickListener {
