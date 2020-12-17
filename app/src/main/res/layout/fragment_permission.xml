@@ -13,16 +13,16 @@
         app:elevation="0dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/topToolbar"
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/grey_darker"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:navigationIcon="@drawable/ic_outline_search_24"
+            android:id="@+id/topToolbar"
             app:popupTheme="@style/popupMenuThemeDark"
-            app:title="Revo"
-            app:titleTextColor="@color/white_material" />
+            android:theme="@style/DarkMaterialToolbar"
+            android:background="@color/grey_darker"
+            app:navigationIcon="@drawable/ic_outline_search_24"
+            app:title="@string/short_name"
+            app:layout_scrollFlags="scroll|enterAlways" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

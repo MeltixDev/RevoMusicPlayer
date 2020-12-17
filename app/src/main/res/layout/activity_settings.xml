@@ -4,18 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/topToolbarBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:navigationIconTint="@color/white_material"
+        android:theme="@style/DarkMaterialToolbar"
+        app:titleTextColor="@color/white_material"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_outline_arrow_back_24"
-        app:popupTheme="@style/popupMenuThemeDark"
-        app:title="@string/currentScreenSettings"
-        app:titleTextColor="@color/white_material" />
+        app:title="@string/currentScreenSettings"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvSettings"

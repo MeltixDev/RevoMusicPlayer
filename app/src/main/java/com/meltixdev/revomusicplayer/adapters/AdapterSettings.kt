@@ -5,8 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.meltixdev.revomusicplayer.databinding.ItemSettingsBinding
-import com.meltixdev.revomusicplayer.dataclasses.DataItemsSettings
-import com.meltixdev.revomusicplayer.settings.ActivitySettings
+import com.meltixdev.revomusicplayer.dataclasses.DataItemSettings
 
 class AdapterSettings(
         var settingsList: List<DataItemSettings>,
@@ -44,10 +43,6 @@ class AdapterSettings(
 
     override fun getItemCount(): Int {
         return settingsList.size
-    }
-
-    override fun onBindViewHolder(holder: SettingsViewHolder, position: Int) {
-        holder.bind(settingsList[position])
     }
 
     interface OnItemClickListener {

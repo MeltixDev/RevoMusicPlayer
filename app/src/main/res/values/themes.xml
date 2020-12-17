@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Revo" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white_dark</item>
-        <item name="colorPrimaryVariant">@color/white_darker</item>
+        <item name="colorPrimary">@color/white_material</item>
+        <item name="colorPrimaryVariant">@color/white_dark</item>
         <item name="colorOnPrimary">@android:color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/purple_light</item>
@@ -14,7 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="android:windowBackground">@color/grey_darker</item>
         <item name="android:navigationBarColor">@color/grey_dark</item>
-        <item name="colorControlNormal">@color/white_material</item>
     </style>
 
     <style name="splashScreenTheme" parent="Theme.MaterialComponents.NoActionBar">
@@ -24,8 +23,19 @@
     </style>
 
     <style name="popupMenuThemeDark">
-        <item name="android:backgroundTint">@color/grey_darker</item>
+        <item name="android:backgroundTint">@color/grey_dark</item>
         <item name="android:textColor">@color/white_material</item>
+        <item name="colorControlNormal">@color/white_material</item>
+    </style>
+    
+    <style name="DarkMaterialToolbar">
+        <item name="android:textColor">@color/white_material</item>
+        <item name="navigationIconTint">@color/white_material</item>
+        <item name="colorControlNormal">@color/white_material</item>
+    </style>
+
+    <style name="LightOverflowButtonTint">
+        <item name="android:tint">@color/white_material</item>
     </style>
 
 </resources>

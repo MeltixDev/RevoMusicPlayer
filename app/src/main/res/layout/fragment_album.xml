@@ -16,11 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/topToolbar"
+            app:popupTheme="@style/popupMenuThemeDark"
+            android:theme="@style/DarkMaterialToolbar"
             android:background="@color/grey_darker"
             app:navigationIcon="@drawable/ic_outline_search_24"
-            app:popupTheme="@style/popupMenuThemeDark"
-            app:titleTextColor="@color/white_material"
-            app:title="Revo"
+            app:title="@string/short_name"
             app:layout_scrollFlags="scroll|enterAlways" />
 
     </com.google.android.material.appbar.AppBarLayout>
