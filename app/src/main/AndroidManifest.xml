@@ -22,6 +22,30 @@
             android:name=".settings.ActivitySettings"
             android:theme="@style/Theme.Revo"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivitySettingsLook"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivitySettingsPlaying"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivitySettingsImages"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivitySettingsAudio"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivitySettingsOther"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ActivityAbout"
+            android:theme="@style/Theme.Revo"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

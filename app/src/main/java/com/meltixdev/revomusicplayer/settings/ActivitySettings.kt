@@ -8,19 +8,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.meltixdev.revomusicplayer.R
 import com.meltixdev.revomusicplayer.adapters.AdapterSettings
 import com.meltixdev.revomusicplayer.databinding.ActivitySettingsBinding
-import com.meltixdev.revomusicplayer.dataclasses.DataItemSettings
+import com.meltixdev.revomusicplayer.dataclasses.DataItemsSettings
 
 class ActivitySettings : AppCompatActivity(), AdapterSettings.OnItemClickListener {
 
     private lateinit var binder: ActivitySettingsBinding
 
     val SettingsList = listOf(
-            DataItemSettings(getString(R.string.look), getString(R.string.lookdescription), R.drawable.ic_colored_color_lens),
-            DataItemSettings(getString(R.string.playing), getString(R.string.playingdescription), R.drawable.ic_colored_view_carousel),
-            DataItemSettings(getString(R.string.images), getString(R.string.imagesdscription), R.drawable.ic_colored_image),
-            DataItemSettings(getString(R.string.audio), getString(R.string.audiodescription), R.drawable.ic_colored_volume_up),
-            DataItemSettings(getString(R.string.other), getString(R.string.otherdescription), R.drawable.ic_colored_shape),
-            DataItemSettings(getString(R.string.about), getString(R.string.aboutdescription), R.drawable.ic_colored_info)
+            DataItemsSettings(getString(R.string.look), getString(R.string.lookdescription), R.drawable.ic_colored_color_lens),
+            DataItemsSettings(getString(R.string.playing), getString(R.string.playingdescription), R.drawable.ic_colored_view_carousel),
+            DataItemsSettings(getString(R.string.images), getString(R.string.imagesdscription), R.drawable.ic_colored_image),
+            DataItemsSettings(getString(R.string.audio), getString(R.string.audiodescription), R.drawable.ic_colored_volume_up),
+            DataItemsSettings(getString(R.string.other), getString(R.string.otherdescription), R.drawable.ic_colored_shape),
+            DataItemsSettings(getString(R.string.about), getString(R.string.aboutdescription), R.drawable.ic_colored_info)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

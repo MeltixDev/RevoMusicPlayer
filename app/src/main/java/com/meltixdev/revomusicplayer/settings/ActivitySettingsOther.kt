@@ -1,4 +1,6 @@
 package com.meltixdev.revomusicplayer.settings
 
-class ActivitySettingsOther {
+import androidx.appcompat.app.AppCompatActivity
+
+class ActivitySettingsOther : AppCompatActivity() {
 }

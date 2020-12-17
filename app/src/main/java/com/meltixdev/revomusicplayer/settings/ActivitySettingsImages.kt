@@ -1,4 +1,6 @@
 package com.meltixdev.revomusicplayer.settings
 
-class ActivitySettingsImages {
+import androidx.appcompat.app.AppCompatActivity
+
+class ActivitySettingsImages : AppCompatActivity() {
 }
