@@ -10,10 +10,9 @@ import com.meltixdev.revomusicplayer.dataclasses.DataItemSettings
 
 class AdapterSettings(
         var settingsList: List<DataItemSettings>,
-        var listener: OnItemClickListener
-) : RecyclerView.Adapter<AdapterSettings.SettingsViewHolder>() {
-
-    private lateinit var binding: ItemSettingsBinding
+        var listener: OnItemClickListener,
+        private val binding: ItemSettingsBinding
+) : RecyclerView.ViewHolder(binding.root) {
 
     inner class SettingsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         init {
@@ -29,8 +28,8 @@ class AdapterSettings(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SettingsViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_settings, parent, false)
-        return SettingsViewHolder(view)
+        val binding = ItemSettingsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return SettingsViewHolder(binding)
     }
 
     override fun getItemCount(): Int {
@@ -38,7 +37,7 @@ class AdapterSettings(
     }
 
     override fun onBindViewHolder(holder: SettingsViewHolder, position: Int) {
-        binding = ItemSettingsBinding.bind(binding.root)
+        binding = ItemSettingsBinding.inflate(R.layout.item_settings)
 
         holder.itemView.apply {
             binding.rvTitle.text = settingsList[position].stringTitle

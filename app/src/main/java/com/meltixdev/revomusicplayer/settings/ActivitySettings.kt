@@ -14,6 +14,15 @@ class ActivitySettings : AppCompatActivity(), AdapterSettings.OnItemClickListene
 
     private lateinit var binder: ActivitySettingsBinding
 
+    val SettingsList = listOf(
+            DataItemSettings(getString(R.string.look), getString(R.string.lookdescription), R.drawable.ic_colored_color_lens),
+            DataItemSettings(getString(R.string.playing), getString(R.string.playingdescription), R.drawable.ic_colored_view_carousel),
+            DataItemSettings(getString(R.string.images), getString(R.string.imagesdscription), R.drawable.ic_colored_image),
+            DataItemSettings(getString(R.string.audio), getString(R.string.audiodescription), R.drawable.ic_colored_volume_up),
+            DataItemSettings(getString(R.string.other), getString(R.string.otherdescription), R.drawable.ic_colored_shape),
+            DataItemSettings(getString(R.string.about), getString(R.string.aboutdescription), R.drawable.ic_colored_info)
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binder = ActivitySettingsBinding.inflate(layoutInflater)
@@ -22,15 +31,6 @@ class ActivitySettings : AppCompatActivity(), AdapterSettings.OnItemClickListene
         binder.topToolbarBack.setNavigationOnClickListener {
             finish()
         }
-
-        val SettingsList = listOf(
-                DataItemSettings(getString(R.string.look), getString(R.string.lookdescription), R.drawable.ic_colored_color_lens),
-                DataItemSettings(getString(R.string.playing), getString(R.string.playingdescription), R.drawable.ic_colored_view_carousel),
-                DataItemSettings(getString(R.string.images), getString(R.string.imagesdscription), R.drawable.ic_colored_image),
-                DataItemSettings(getString(R.string.audio), getString(R.string.audiodescription), R.drawable.ic_colored_volume_up),
-                DataItemSettings(getString(R.string.other), getString(R.string.otherdescription), R.drawable.ic_colored_shape),
-                DataItemSettings(getString(R.string.about), getString(R.string.aboutdescription), R.drawable.ic_colored_info)
-        )
 
         val adapter = AdapterSettings(SettingsList, this)
         binder.rvSettings.adapter = adapter
