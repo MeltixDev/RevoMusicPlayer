@@ -46,6 +46,6 @@
     <string name="lastplayed">Last played</string>
     <string name="shuffle">Shuffle</string>
     <string name="errorohno" translatable="false">Oh no!</string>
-    <string name="nopermission">I can\'t access to your phones\' storage!\nGrant storage permissions to see your tunes!</string>
+    <string name="nopermission">I can\'t access to your phone\'s storage!\nGrant storage permissions to see your tunes!</string>
     <string name="opensyssettings">Open system settings</string>
 </resources>
